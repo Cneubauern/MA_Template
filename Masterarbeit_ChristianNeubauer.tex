@@ -1,0 +1,54 @@
+\documentclass[11pt,paper=a4, DIV=calc, headinclude, twoside]{scrbook}
+
+% includes all packages
+\include{preamble/usepackages}
+
+% declare all variables here 
+\include{preamble/variables}
+
+% general settings
+\include{preamble/listings}
+\include{preamble/geometry}
+\include{preamble/hypersetup}
+\include{preamble/hyphenation}
+\include{preamble/titleSpacing}
+
+% define styles for header and footer 
+\include{preamble/pagestyle}
+
+% put your glossary here
+%\include{preamble/glossary}
+
+\begin{document}
+
+% pre content
+\include{./content/frame/coverpage}
+\include{./content/frame/personaldata}
+\include{./content/frame/affidavit}
+
+%\frontmatter
+
+%\include{./content/abstract}
+
+%\tableofcontents
+
+% table of acronyms
+%\include{./content/frame/tableOfAcronyms}
+
+%\mainmatter
+
+% put content here 
+\input{./content/content}
+
+\listoffigures
+\listoftables
+
+
+\bibliographystyle{plain}
+\bibliography{bibo}
+
+
+
+%\printnoidxglossaries
+
+\end{document}

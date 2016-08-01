@@ -1,0 +1,18 @@
+\begin{thebibliography}{}
+
+\bibitem[Jonas, year]{B1}
+Jonas (year).
+\newblock {\em In 80zig Tagen aufs Klo}.
+\newblock Springer.
+
+\bibitem[Lin and Kernighan, 1973]{lin1973}
+Lin, S. and Kernighan, B.~W. (1973).
+\newblock An effective heuristic algorithm for the travelling-salesman problem.
+\newblock {\em Operations Research}, 21:498--516.
+
+\bibitem[Peter, year]{ID}
+Peter, H. (year).
+\newblock title.
+\newblock {\em journal}.
+
+\end{thebibliography}
