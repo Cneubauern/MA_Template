@@ -1,6 +1,0 @@
-\select@language {ngerman}
-\contentsline {chapter}{\numberline {1}Abk\IeC {\"u}rzungsverzeichnis}{7}{chapter.1}
-\contentsline {chapter}{\numberline {2}Template}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Section 1}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Section 2}{9}{section.2.2}
-\contentsline {section}{\numberline {2.3}Section 3}{9}{section.2.3}
