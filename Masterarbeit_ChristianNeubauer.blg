@@ -1,0 +1,13 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Masterarbeit_ChristianNeubauer.aux
+A level-1 auxiliary file: ./content/frame/coverpage.aux
+A level-1 auxiliary file: ./content/frame/personaldata.aux
+A level-1 auxiliary file: ./content/frame/affidavit.aux
+A level-1 auxiliary file: ./content/abstract.aux
+A level-1 auxiliary file: ./content/frame/tableOfAcronyms.aux
+I couldn't open style file literature.bst
+---line 42 of file Masterarbeit_ChristianNeubauer.aux
+ : \bibstyle{literature
+ :                     }
+I'm skipping whatever remains of this command
+I found no style file---while reading file Masterarbeit_ChristianNeubauer.aux
+(There were 2 error messages)
