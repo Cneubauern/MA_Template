@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper, DIV=calc, twoside]{article}
+\documentclass[11pt,paper=a4, DIV=calc, headinclude, twoside]{scrbook}
 
 % includes all packages
 \include{preamble/usepackages}
@@ -21,52 +21,34 @@
 
 \begin{document}
 
-% title page
+% pre content
 \include{./content/frame/coverpage}
-
-% personal data
-\pagenumbering{roman}	% define roman style for page numbering
-\setcounter{page}{1}	% start page numbering
-
 \include{./content/frame/personaldata}
-
-% it's the authorship of your thesis
 \include{./content/frame/affidavit}
 
+%\frontmatter
 
-\include{./content/abstract}
+%\include{./content/abstract}
 
-% Table of content
-\newpage
-\tableofcontents
-\clearpage
+%\tableofcontents
 
 % table of acronyms
-\newpage
-\addcontentsline{toc}{section}{Tabelle mit Abkürzungen}
-\include{./content/frame/tableOfAcronyms}
+%\include{./content/frame/tableOfAcronyms}
 
-% your thesis starts here
-%\setcounter{page}{1}
-\pagenumbering{arabic}
+%\mainmatter
 
+% put content here 
 \input{./content/content}
 
-\newpage
-\addcontentsline{toc}{section}{Abbildungsverzeichnis}
 \listoffigures
-
-\newpage
-\addcontentsline{toc}{section}{Tabellenverzeichnis}
 \listoftables
 
-\newpage
-\addcontentsline{toc}{section}{Literaturverzeichnis}
-\bibliographystyle{literature}
+
+\bibliographystyle{plain}
 \bibliography{bibo}
 
 
 
-\printnoidxglossaries
+%\printnoidxglossaries
 
 \end{document}
