@@ -1,5 +1,4 @@
-\documentclass[11pt,a4paper, DIV=calc, twoside]{article}
-
+\documentclass[a4paper,11pt, DIV=calc, twoside, openright, BCOR8mm]{scrreprt}
 % includes all packages
 \include{preamble/usepackages}
 
@@ -18,7 +17,7 @@
 
 % TODO put your glossary here
 %\include{preamble/glossary}
-
+\typearea[current]{calc}
 \makeindex
 
 \begin{document}
@@ -30,8 +29,6 @@
 % personal data
 \pagenumbering{roman}	% define roman style for page numbering
 \setcounter{page}{1}	% start page numbering
-
-\include{./content/frame/personaldata}
 
 % it's the authorship of your thesis
 \include{./content/frame/affidavit}
@@ -65,15 +62,15 @@
 \pagestyle{plain}
 
 \newpage
-\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+%\addcontentsline{toc}{section}{Abbildungsverzeichnis}
 \listoffigures
 
 \newpage
-\addcontentsline{toc}{section}{Tabellenverzeichnis}
+%\addcontentsline{toc}{section}{Tabellenverzeichnis}
 \listoftables
 
 \newpage
-\addcontentsline{toc}{section}{Literaturverzeichnis}
+%\addcontentsline{toc}{section}{Literaturverzeichnis}
 \bibliographystyle{plain}
 \bibliography{bibo}
 

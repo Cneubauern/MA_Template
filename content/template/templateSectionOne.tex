@@ -1,8 +1,57 @@
-\subsection{Section 1}
+\section[Textformating]{Text Formats}
 \label{sec:section1}
 
-\blindtext
+\subsection{Textsatz}
 
-\cite{lin1973}
+\begin{flushleft}
+	Text links
+\end{flushleft}
+
+\begin{center}
+	Text mittig
+\end{center}
+
+\begin{flushright}
+	Text links
+\end{flushright}
+
+\subsection{Zitatumgebungen}
+
+Das ist ein "Quote" 
+\begin{quote}
+	\blindtext
+\end{quote}
+
+Das ist eine "Quotation"
+\begin{quotation}
+	\blindtext
+\end{quotation}
+
+\subsection{Theoreme}
+
+\begin{beisp}
+	Ein Text
+\end{beisp}
+
+\begin{behaupt}
+	Ein Text
+\end{behaupt}
+
+\begin{defin}
+	Ein Text
+\end{defin}
+
+\begin{lemma}
+	Ein Text
+\end{lemma}
+
+\subsection{Quellcode}
+
+\lstinputlisting[language=TeX,basicstyle=\scriptsize, linerange={1,17-42}, numbers=left, numberstyle=\tiny,stepnumber=2, numbersep=5pt, frame= single, framerule=0.1pt]{./content/template/template.tex}
 
 
+\begin{lstlisting}[language=TeX, backgroundcolor=\color{white}]
+\begin{beisp}
+Ein Text
+\end{beisp}
+\end{lstlisting}
