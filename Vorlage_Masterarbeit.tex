@@ -16,14 +16,17 @@
 % define styles for header and footer 
 \include{preamble/pagestyle}
 
-% put your glossary here
+% TODO put your glossary here
 %\include{preamble/glossary}
+
+\makeindex
 
 \begin{document}
 
 % title page
 \include{./content/frame/coverpage}
 
+\pagestyle{plain}
 % personal data
 \pagenumbering{roman}	% define roman style for page numbering
 \setcounter{page}{1}	% start page numbering
@@ -36,6 +39,10 @@
 
 \include{./content/abstract}
 
+
+%\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+
+\pagestyle{plain}
 % Table of content
 \newpage
 \tableofcontents
@@ -46,11 +53,16 @@
 \addcontentsline{toc}{section}{Tabelle mit Abkürzungen}
 \include{./content/frame/tableOfAcronyms}
 
+% Make layout two-sided
+\pagestyle{fancy}
+
 % your thesis starts here
 %\setcounter{page}{1}
 \pagenumbering{arabic}
 
 \input{./content/content}
+
+\pagestyle{plain}
 
 \newpage
 \addcontentsline{toc}{section}{Abbildungsverzeichnis}
@@ -62,11 +74,16 @@
 
 \newpage
 \addcontentsline{toc}{section}{Literaturverzeichnis}
-\bibliographystyle{literature}
+\bibliographystyle{plain}
 \bibliography{bibo}
 
+\newpage
+\printindex
 
-
+\newpage
 \printnoidxglossaries
+
+\appendix
+\include{./content/appendix/appendix}
 
 \end{document}

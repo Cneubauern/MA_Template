@@ -1,10 +1,21 @@
 \pagestyle{fancy}
 \fancyhf{}
 
-\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\renewcommand{\subsectionmark}[1]{\markright{#1}}
+%\lhead{\leftmark}
+%\rhead{\rightmark}
 
+
+%Keine Großbuchstaben
+%\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+%\renewcommand{\subsectionmark}[1]{}
+
+%\renewcommand{\leftmark}[1]{ \markright{#1}{} }
+%\renewcommand{\rightmark}[1]{ \markright{#1}{} }
 
 %header
+%\markboth{\sectionmark{}}{\subsectionmark{}}
 \fancyhead[LE,LO]{\leftmark}
 \fancyhead[RE,RO]{\rightmark}
 
