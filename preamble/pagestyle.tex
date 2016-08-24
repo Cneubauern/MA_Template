@@ -4,15 +4,6 @@
 
 \renewcommand{\sectionmark}[1]{\markboth{#1}{}}
 \renewcommand{\subsectionmark}[1]{\markright{#1}}
-%\lhead{\leftmark}
-%\rhead{\rightmark}
-
-%Keine Großbuchstaben
-%\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
-%\renewcommand{\subsectionmark}[1]{}
-
-%\renewcommand{\leftmark}[1]{ \markright{#1}{} }
-%\renewcommand{\rightmark}[1]{ \markright{#1}{} }
 
 %header
 %\markboth{\sectionmark{}}{\subsectionmark{}}
@@ -25,3 +16,11 @@
 \fancyfoot[LO,RE]{\thepage}
 
 %Indexstyle
+
+%TableOfContents
+
+% Change header for content table
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\setcounter{tocdepth}{2}
+
+\tocloftpagestyle{plain}

@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt, DIV=calc, twoside, openright, BCOR8mm]{scrreprt}
+\documentclass[a4paper,11pt, DIV12, twoside, openright, BCOR15mm]{scrreprt}
 % includes all packages
 \include{preamble/usepackages}
 
@@ -18,6 +18,11 @@
 % TODO put your glossary here
 %\include{preamble/glossary}
 \typearea[current]{calc}
+
+%\GlsSetXdyLanguage{german}
+\GlsSetXdyCodePage{duden-utf8}
+
+\makeglossaries
 \makeindex
 
 \begin{document}
@@ -25,7 +30,6 @@
 % title page
 \include{./content/frame/coverpage}
 
-\pagestyle{plain}
 % personal data
 \pagenumbering{roman}	% define roman style for page numbering
 \setcounter{page}{1}	% start page numbering
@@ -33,21 +37,17 @@
 % it's the authorship of your thesis
 \include{./content/frame/affidavit}
 
-
+% A short abstract of your work 
 \include{./content/abstract}
 
-
-%\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
-
-\pagestyle{plain}
 % Table of content
-\newpage
 \tableofcontents
-\clearpage
+
+\listoffigures
+
+\listoftables
 
 % table of acronyms
-\newpage
-\addcontentsline{toc}{section}{Tabelle mit Abkürzungen}
 \include{./content/frame/tableOfAcronyms}
 
 % Make layout two-sided
@@ -59,28 +59,12 @@
 
 \input{./content/content}
 
-\pagestyle{plain}
-
-\newpage
-%\addcontentsline{toc}{section}{Abbildungsverzeichnis}
-\listoffigures
-
-\newpage
-%\addcontentsline{toc}{section}{Tabellenverzeichnis}
-\listoftables
-
-\newpage
-%\addcontentsline{toc}{section}{Literaturverzeichnis}
-\bibliographystyle{plain}
-\bibliography{bibo}
-
-\newpage
-\printindex
-
-\newpage
-\printnoidxglossaries
-
-\appendix
 \include{./content/appendix/appendix}
+
+\printglossaries
+
+\printbibliography
+
+\printindex
 
 \end{document}
