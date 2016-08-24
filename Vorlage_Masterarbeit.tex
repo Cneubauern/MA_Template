@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt, DIV=calc, twoside, openright, BCOR15mm]{scrreprt}
+\documentclass[a4paper,11pt, DIV=calc,headinclude, footinclude, twoside,openright, BCOR15mm]{scrreprt}
 % includes all packages
 \include{preamble/usepackages}
 
@@ -48,16 +48,12 @@
 % table of acronyms
 \include{./content/frame/tableOfAcronyms}
 
-% Make layout two-sided
-%\pagestyle{fancy}
-
 % your thesis starts here
-%\setcounter{page}{1}
-\pagenumbering{arabic}
 
 \input{./content/content}
 
 \include{./content/appendix/appendix}
+
 
 \printglossaries
 
