@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt, DIV12, twoside, openright, BCOR15mm]{scrreprt}
+\documentclass[a4paper,11pt, DIV=calc, twoside, openright, BCOR15mm]{scrreprt}
 % includes all packages
 \include{preamble/usepackages}
 
@@ -16,8 +16,6 @@
 \include{preamble/pagestyle}
 
 % TODO put your glossary here
-%\include{preamble/glossary}
-\typearea[current]{calc}
 
 %\GlsSetXdyLanguage{german}
 \GlsSetXdyCodePage{duden-utf8}
@@ -51,7 +49,7 @@
 \include{./content/frame/tableOfAcronyms}
 
 % Make layout two-sided
-\pagestyle{fancy}
+%\pagestyle{fancy}
 
 % your thesis starts here
 %\setcounter{page}{1}
