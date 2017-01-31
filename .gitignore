@@ -195,3 +195,10 @@ TSWLatexianTemp*
 
 # idea
 .idea
+
+# TeXnicCenter
+*.tcp
+
+# temp
+*.tmp
+*.temp
